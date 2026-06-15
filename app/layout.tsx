@@ -18,6 +18,13 @@ export const metadata: Metadata = {
   keywords: "free qr code generator, qr code maker, make qr code, custom qr code, qr code no watermark, instant qr code, qr code with logo, colored qr code, qr code download, online qr code generator",
   robots: "index, follow",
   authors: [{ name: "QR Code Generator" }],
+
+  icons: {
+    icon: "/qrcode-custom-generator/icon.svg", // Mengikuti aturan catatan basePath Anda jika ditaruh di folder public
+    shortcut: "/qrcode-custom-generator/icon.svg",
+    apple: "/qrcode-custom-generator/icon.svg",
+  },
+
   openGraph: {
     title: "Free QR Code Generator - No Watermark, Instant Download",
     description: "Create custom QR codes instantly with colors and logos. Free, fast, and no ads. No registration required.",
