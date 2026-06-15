@@ -12,7 +12,6 @@ export default function QRCodeGenerator() {
   const [logoImage, setLogoImage] = useState<string | null>(null);
   const [logoSize, setLogoSize] = useState(30);
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const logoCanvasRef = useRef<HTMLCanvasElement>(null);
 
   // Generate QR Code with Logo
   useEffect(() => {
@@ -306,7 +305,7 @@ export default function QRCodeGenerator() {
               <strong className="text-gray-900 dark:text-white">Logo Support:</strong> Add your custom logo to the center of your QR code for professional branding while maintaining full scannability.
             </p>
             <p>
-              <strong className="text-gray-900 dark:text-white">High Error Correction:</strong> Use "High" error correction (30%) for codes with logos to ensure scannability even if up to 30% is damaged.
+              <strong className="text-gray-900 dark:text-white">High Error Correction:</strong> Use &quot;High&quot; error correction (30%) for codes with logos to ensure scannability even if up to 30% is damaged.
             </p>
             <p>
               <strong className="text-gray-900 dark:text-white">Data Capacity:</strong> Store up to 4,296 alphanumeric characters in a single QR code. Perfect for URLs, text, contact information, and more.

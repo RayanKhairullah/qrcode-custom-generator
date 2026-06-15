@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [main] # atau master, sesuaikan dengan branch utama Anda
+    branches: [main]
 
 permissions:
   contents: read
@@ -26,11 +26,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 24 # Diupdate ke Node 24 sesuai requirement terbaru 2026
           cache: npm
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install # Menggunakan install biasa untuk memastikan keselarasan package-lock
 
       - name: Build with Next.js
         run: npm run build
@@ -38,7 +38,7 @@ jobs:
       - name: Upload artifacts
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out # Mengupload folder hasil build statis Next.js
+          path: ./out
 
       - name: Deploy to GitHub Pages
         id: deployment

@@ -3,7 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "description": "Free QR Code Generator - Create instant QR codes with no watermark, custom colors, and logo support. No ads, no registration required.",
-  "keywords": ["qr code generator", "free qr code maker", "custom qr code", "qr code with logo", "instant qr code generator", "no watermark qr code"],
+  "keywords": [
+    "qr code generator",
+    "free qr code maker",
+    "custom qr code",
+    "qr code with logo",
+    "instant qr code generator",
+    "no watermark qr code"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -19,6 +26,7 @@
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
+    "@types/qrcode": "^1.5.6",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
