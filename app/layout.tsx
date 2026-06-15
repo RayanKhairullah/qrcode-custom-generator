@@ -21,11 +21,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Free QR Code Generator - No Watermark, Instant Download",
     description: "Create custom QR codes instantly with colors and logos. Free, fast, and no ads. No registration required.",
-    url: "https://qrcode-custom-generator.vercel.app",
+    url: "https://rayankhairullah.github.io/qrcode-custom-generator",
     type: "website",
     images: [
       {
-        url: "https://qrcode-custom-generator.vercel.app/og-image.png",
+        url: "https://rayankhairullah.github.io/qrcode-custom-generator/og-image.png",
         width: 1200,
         height: 630,
         alt: "QR Code Generator",
@@ -49,7 +49,7 @@ export default function RootLayout({
     "@type": "WebApplication",
     "name": "QR Code Custom Generator",
     "description": "Free QR code generator with no watermark. Create custom QR codes instantly with colors, logos, and download for free.",
-    "url": "https://qrcode-custom-generator.vercel.app",
+    "url": "https://rayankhairullah.github.io/qrcode-custom-generator",
     "applicationCategory": "Utility",
     "offers": {
       "@type": "Offer",
